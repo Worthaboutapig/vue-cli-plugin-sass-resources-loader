@@ -1,0 +1,25 @@
+{
+  "name": "vue-cli-plugin-sass-resources-loader",
+  "version": "1.0.0",
+  "description": "Vue CLi 3.x plugin for sass-resources-loader",
+  "keywords": [
+    "sass",
+    "css",
+    "sass-resources",
+    "sass-resources-loader",
+    "vue",
+    "vue-cli",
+    "plugin",
+    "cli"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "sass-resources-loader": "^1.3.3"
+  },
+  "repository": "https://github.com/SpringLIAO/vue-cli-plugin-sass-resources-loader.git",
+  "author": "SpringLIAO <www.389055604@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpringLIAO/vue-cli-plugin-sass-resources-loader/issues"
+  }
+}

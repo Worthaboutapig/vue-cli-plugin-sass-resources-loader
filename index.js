@@ -1,5 +1,5 @@
 module.exports = api => {
-  // TODO: if sass-resources-loader has configured.
+  // TODO: if sass-resources-loader is configured.
   api.chainWebpack(conf => {
     const ofs = ['vue-modules', 'vue', 'normal-modules', 'normal']
     const cssRules = conf.module.rule('css')

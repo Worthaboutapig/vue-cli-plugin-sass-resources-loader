@@ -14,10 +14,12 @@ module.exports = api => {
           resources: './src/assets/variables.css'
         })
     }
+
     ofs.forEach(type => {
       addSassResourcesLoader(cssRules, type)
       addSassResourcesLoader(postRules, type)
     })
+
     return conf
   })
 }

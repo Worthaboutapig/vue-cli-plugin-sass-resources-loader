@@ -11,7 +11,7 @@ module.exports = api => {
         .use('sass-resources-loader')
         .loader('sass-resources-loader')
         .options({
-          resources: './src/assets/variables.css'
+          resources: './src/assets/variables.scss'
         })
     }
 

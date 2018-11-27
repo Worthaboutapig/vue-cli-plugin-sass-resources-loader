@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-sass-resources-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vue CLi 3.x plugin for sass-resources-loader",
   "keywords": [
     "sass",

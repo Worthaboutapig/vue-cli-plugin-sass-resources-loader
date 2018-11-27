@@ -1,7 +1,7 @@
 module.exports = (api, opts, rootOptions) => {
-    const utils = require('./utils')(api, opts);
+  const utils = require('./utils')(api, opts)
 
-    api.onCreateComplete(() => {
-        utils.updateResourceFile();
-    });
-};
+  api.onCreateComplete(() => {
+    utils.updateResourceFile()
+  })
+}

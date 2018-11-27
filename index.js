@@ -1,9 +1,9 @@
-module.exports = api => {
+module.exports = (api, options) => {
   // TODO: if sass-resources-loader is configured.
   api.chainWebpack(conf => {
-    const ofs = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    const cssRules = conf.module.rule('css')
-    const postRules = conf.module.rule('postcss')
+    const ofs = ['vue-modules', 'vue', 'normal-modules', 'normal'];
+    const cssRules = conf.module.rule('css');
+    const postRules = conf.module.rule('postcss');
 
     const addSassResourcesLoader = (rules, type) => {
       rules
@@ -11,15 +11,15 @@ module.exports = api => {
         .use('sass-resources-loader')
         .loader('sass-resources-loader')
         .options({
-          resources: './src/assets/variables.scss'
-        })
-    }
+          resources: options.scssVariablesFileLocation
+        });
+    };
 
     ofs.forEach(type => {
-      addSassResourcesLoader(cssRules, type)
-      addSassResourcesLoader(postRules, type)
-    })
+      addSassResourcesLoader(cssRules, type);
+      addSassResourcesLoader(postRules, type);
+    });
 
-    return conf
-  })
-}
+    return conf;
+  });
+};

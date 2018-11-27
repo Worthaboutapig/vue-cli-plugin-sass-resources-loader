@@ -8,7 +8,7 @@ module.exports = api => {
     const addSassResourcesLoader = (rules, type) => {
       rules
         .oneOf(type)
-        .use('sass-resoureces-loader')
+        .use('sass-resources-loader')
         .loader('sass-resources-loader')
         .options({
           resources: './src/assets/variables.css'
